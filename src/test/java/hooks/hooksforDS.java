@@ -18,7 +18,7 @@ public class hooksforDS {
 	
     @Before
     public void setUp() {
-       BaseclassforDriver.initialiseBrowser("chrome");
+       BaseclassforDriver.initialiseBrowser("edge");
       
       driver=BaseclassforDriver.getdriver();
        driver.manage().window().maximize();

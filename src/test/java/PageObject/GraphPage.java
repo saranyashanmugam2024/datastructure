@@ -25,7 +25,7 @@ public class GraphPage {
     private By usernameField	  	 = By.xpath("//input[@id='id_username']");
 	private By passwordField 	  	 = By.xpath("//input[@id='id_password']");
 	private By tryherebutton         =By.linkText("Try here>>>");
-	private By Textarea           =By.xpath ("//div[@class='input']/div/div/textarea");
+	private By Textarea           =By.xpath("//div[@class='input']/div/div/textarea");
 	  ////textarea[@autocorrect='off' and @autocapitalize='off' and @spellcheck='false']
 	private By run     			  =By.xpath("//button[@type='button']");  
 	private By OutputElement	  =By.xpath("//pre[@id='output']");
@@ -66,6 +66,9 @@ public class GraphPage {
 		  
 	  public void Textarea()  {
 		  
+		  //WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(20));
+		//  wait.until(ExpectedConditions.elementToBeClickable(By.xpath("Textarea ")));
+
 		  driver.findElement(Textarea).sendKeys("print 'helloworld'");
 		  
 		  

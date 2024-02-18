@@ -6,7 +6,7 @@ Feature: Graph Data Structure Exploration
     Then I am redirected to the Data Structure home page
     When I click on the Get Started link
     Then I navigate to the Graph Overview page
-
+@tag1
   Scenario: Navigate to Graph Page
     When I click on the Graph topic link
     Then I navigate to the Graph Introduction page
