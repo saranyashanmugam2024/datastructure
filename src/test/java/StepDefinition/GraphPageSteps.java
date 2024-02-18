@@ -151,7 +151,7 @@ public GraphPageSteps() {
 
 	@When("I enter an invalid program into the program page textarea and click Run")
 	public void i_enter_an_invalid_program_into_the_program_page_textarea_and_click_run() throws InterruptedException {
-	    //driver.get("https://dsportalapp.herokuapp.com/tryEditor");
+	    driver.get("https://dsportalapp.herokuapp.com/tryEditor");
 	    //Thread.sleep(3000);
 	    graph.textareainvalid();
 	   // Thread.sleep(4000);
@@ -180,7 +180,7 @@ public GraphPageSteps() {
 
 	@Then("I  navigate to the Practice Questions page")
 	public void i_navigate_to_the_practice_questions_page() {
-	    
+	    driver.get("https://dsportalapp.herokuapp.com/graph/practice");
 	}
 
 
